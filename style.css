@@ -1,0 +1,136 @@
+body {
+    background: #f2f2f2;
+    font-family: 'Times New Roman', Times, serif;
+ /*   line-height: 1.5;*/
+    color: #323232;
+}
+
+a {
+    color: #323232;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 100px;
+    padding: 24px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 48px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-name{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30pt;
+}
+
+.my-academic{
+    width:410px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.my-contact{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section-title{
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sub-title{
+    margin-top: -15px;
+}
+
+.languages{
+    margin-top: 130px;
+}
+
+.projects{
+    margin-top: 40px;
+}
+
+.skills-des{
+    margin-top: 35px;
+    line-height: 1.5;
+}
+
+.div-title{
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #258cb3;
+}
+
+.div2{
+    margin-top:400px;
+}
+
+.time-range{
+    text-align: right;
+    line-height: 1;
+}
+
+.dotted-line{
+    line-height: 100px;
+    border-top-style: dotted;
+    border-top-width: 3px;
+    border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+.company{
+    font-weight: bold;
+    height: 50px;
+}
+
+.job-des{
+    line-height:1.5;
+}
+
+.university{
+    font-weight:bold;
+}
+
+.col-one{
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.col-two{
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/*.experience{
+    position: relative;
+    top: -25px;
+}
+
+.education{
+    position: relative;
+    top: -25px;
+}
+
+.interests{
+    position: relative;
+    top: -25px;
+}
