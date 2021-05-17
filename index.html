@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Zhuye Lu</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          808 BEAT MAKER
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-wrapper">
+      <div class="two-column-wrapper">
+        <div class="profile-image-wrapper">
+          <img src="images/banner.jpeg" alt="">
+        </div>
+
+        <div class="profile-content-wrapper">
+          <h1>Hi, thanks for visiting my site.</h1>
+          <p>With over a decade of development experience in a number of industries I realized that the typical product creation
+            process between clients and developers was flawed. All too often developers rarely communicate to clients throughout
+            the development stage, resulting in a final product that fails to reach the goal sought by the customer and end
+            user.
+          </p>
+
+          <p>For this reason I decided to utilize a completely different development pattern that focuses on highly focused
+            communication and transparent design patterns. When I take on a project not only do I work to craft the application
+            according to the client's specifications, I give daily updates to ensure that the project is aligning properly
+            with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img-01.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <a href="DS_project.html" style="color: white;">
+              <div class="proj-wrapper">Data Science Project</div>
+            </a>
+            <div class="proj-timeline">2021 April-May</div>
+            <div class="subtitle">Classify proteins into one of 15 groups</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img-02.jpg)"></div>
+          <div class="img-text-wrapper">
+            <a href="C++_project.html" style="color: white;">
+              <div class="proj-wrapper">C++ Project</div>
+            </a>
+            <div class="proj-timeline">2020 April-May</div>
+
+            <div class="subtitle">Chess Board Game</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img-04.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <a href="HTMLCSS_project.html" style="color: white;">
+              <div class="proj-wrapper">HTML CSS Project</div>
+            </a>
+            <div class="proj-timeline">2020 Aug-Sep</div>
+
+            <div class="subtitle">My old resume in a Web version</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img-03.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <a href="VBA_project.html" style="color: white;">
+              <div class="proj-wrapper">VBA Project</div>
+            </a>
+            <div class="proj-timeline">2019 Aug-Sep</div>
+
+            <div class="subtitle">Automate the process of coding categorical vars into numerical</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
