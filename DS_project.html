@@ -149,6 +149,23 @@ Testing dataset accuracy score:  0.6944444444444444
             </code></pre>
         </div>
 
+        <div class="text-subtitles">Stacking</div>
+        <div class="text-body"> 
+            <p>
+            The StackingClassifier is defined by first choosing 5 base models, then defining the Logistic Regression metal model
+            to combine the predictions obtained from the base models using 5-fold cross-validation.
+            Here I chose 5 base models to be Logistic Regression, Naive Bayes, Random Forest, KNN, and SVC.
+            After evaluating the models using cross-validation, the box plot of the accuracy scores looks like
+            </p>
+            <img src="images/ds-05.png" alt="" width="600">
+            <p>
+            From the boxplot, we see Logistic Regression performed the best on the data. The next one is Random Forest Classifier, as we
+            found previously. We see StackingClassfier performed weirdly here. Some records showed a pretty high prediction, while 
+            some are low. I think it might due to the high imbalance of the data. 
+            <br>
+            </p>
+        </div>
+
         <div class="text-subtitles">Conclusion</div>
         <div class="text-body">
             <p>We see that Random Forest algorithm gave the highest prediction accuracy score. <br>
@@ -156,6 +173,14 @@ Testing dataset accuracy score:  0.6944444444444444
                I also have high expectation on XGBoost algorithm. Since XGBoost also takes super long to run, <br>
                I tuned hyperparameters only based on 2 iterations. I believe the score will be higher with more trials on hyperparameters.</p>
         <br>
+        </div>
+
+        <div class="text-subtitles">Project Code can be found</div>
+        <div class="text-body">
+            <p>
+            <a href="https://github.com/leslie-lu-hub/Protein-Classifier/blob/main/protein_pred.py">here</a>
+            <br>
+            </p>
         </div>
 
         <div class="text-subtitles">Reference</div>
