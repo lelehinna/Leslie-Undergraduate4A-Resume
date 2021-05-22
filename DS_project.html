@@ -26,6 +26,17 @@
 
     <div class="text-wrapper">
         <div class="text-title">Classify proteins into one of 15 classes</div>
+        <div class="text-subtitles">Read Protein Dataset</div>
+        <div class="text-body">
+            <ul>
+                <li>Import the dataset with pd.read_csv</li>
+                <li>Set the last column to be the label column, columns before to be the features columns</li>
+                <li>The label column ranges from 0-14, and there are 2961 features columns before preprocessing</li>
+                <li>Split the dataset to 25% test data, 75% train data</li>
+                <br>
+            </ul>
+        </div>
+
         <div class="text-subtitles">Preprocess Data</div>
         <div class="text-body">
             <ul>
@@ -50,7 +61,7 @@
                 <li>Since class 11, 12, 14 only have 1, 2, 1 data, we use oversample to generate data for class 11, 12, 14</li>
                 <li>We use SMOTE to generate new and synthetic data for class 0-10</li>
             </ul>
-            <p>We plot the label, we see each class has 271 data. Now we are good to apply algorithms. </p>>
+            <p>By plotting the label table, we see each class has 271 data. Now we are good to apply algorithms. </p>>
             <img src="images/ds-04.png" alt="" height="300"> 
             <p>Here I will apply </p>
             <p>
@@ -60,6 +71,7 @@
                    <li>Support Vector Machine</li>
                    <li>Gradient Boosting Machines</li>
                    <li>XGBoost</li>
+                   <li>Stacking Classifier</li>
                 </ul>
             </p>
             <br>
@@ -161,7 +173,7 @@ Testing dataset accuracy score:  0.6944444444444444
             <p>
             From the boxplot, we see Logistic Regression performed the best on the data. The next one is Random Forest Classifier, as we
             found previously. We see StackingClassfier performed weirdly here. Some records showed a pretty high prediction, while 
-            some are low. I think it might due to the high imbalance of the data. 
+            some are low. I think it might due to the high imbalance of the dataset I used to train the model on. 
             <br>
             </p>
         </div>
@@ -171,8 +183,12 @@ Testing dataset accuracy score:  0.6944444444444444
             <p>We see that Random Forest algorithm gave the highest prediction accuracy score. <br>
                This is probably because Decision Tree performs well on imbalanced data. <br>
                I also have high expectation on XGBoost algorithm. Since XGBoost also takes super long to run, <br>
-               I tuned hyperparameters only based on 2 iterations. I believe the score will be higher with more trials on hyperparameters.</p>
-        <br>
+               I tuned hyperparameters only based on 2 iterations. I believe the score will be higher with more trials on hyperparameters. <br>
+               I also conluded that preprocessing the data is the most important step in improving the performance of machine learning models. <br>
+               I did this project twice, and by carefully preprocessed the data in the second time, <br>
+               the prediction score on testing data is 4-6% higher than the first trial. <br>
+            </p>
+
         </div>
 
         <div class="text-subtitles">Project Code can be found</div>
