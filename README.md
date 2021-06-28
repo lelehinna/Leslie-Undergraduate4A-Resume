@@ -1,4 +1,4 @@
 # LeslieResume
 
-# Please downloaded the file package and open the index.html with any browser.
+# Please download the file package and open the index.html with any browser.
 # 
