@@ -6,5 +6,5 @@ This repository presented a webpage version of my undergraduate 4A term resume. 
 
 Please download the file package and open ```index.html``` with any browser.
 
-## A Quick Review
+## A Brief Overview
 
