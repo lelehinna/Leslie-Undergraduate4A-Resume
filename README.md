@@ -1,4 +1,4 @@
-# Leslie-UnderGraduate4A-Resume
+# UnderGraduate4A-Resume
 
 This repository presented a webpage version of my undergraduate 4A term resume. The webpage was coded in HTML, CSS and JavaScript
 
